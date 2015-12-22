@@ -31,7 +31,12 @@ me.get('foo')         # bar
 me.save()
 ```
 
-### Edge 
+```python
+# retrieve it from db:
+me = User.get_by_id(123)
+```
+
+### Edges
 *todo*
 
 ### Indexed data
