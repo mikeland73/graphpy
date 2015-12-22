@@ -20,12 +20,14 @@ class User(GPNode):
 # Use the model:
 me = User(last_name='Doe')
 me.set_name('Mike')
-me.get_name()      # Mike
-me.get_last_name() # Doe
+me.get_name()         # Mike
+me.get_last_name()    # Doe
 try:
-    me.get_foo()   # throws exception
+    me.get_foo()      # throws exception
 except: 
-    me.get('foo')  # this is fine, returns None
+    me.get('foo')     # this is fine, returns None
+me.set('foo', 'bar')  # it's fine to use non-declared data
+me.get('foo')         # bar
 me.save()
 ```
 
