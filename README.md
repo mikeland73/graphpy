@@ -14,7 +14,9 @@ class User(GPNode):
         'name': '',
         'last_name': '',
     }
-
+```    
+    
+```python
 # Use the model:
 me = User()
 me.set_name('Mike')
